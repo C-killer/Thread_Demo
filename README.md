@@ -166,7 +166,10 @@ int sem_getvalue(sem_t *sem, int *sval);
    - 当任务过少的时候，可以适当的销毁一些工作线程
 
 ## C语言实现
+### ThreadPool.c
 ## C++实现
+### ThreadPool.cpp (初级版)
+### thread_cpp.cpp (高级版）
 
 # 内容参考
     https://subingwen.cn
