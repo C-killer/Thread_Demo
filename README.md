@@ -4,9 +4,10 @@
 ## 互斥锁
 
 ```cpp
-std::mutex
-std::lock_guard
-std::recursive_mutex
+std::mute 	// 最基础的锁
+std::lock_guard	// 自动作用域锁,构造时加锁，析构时自动释放锁
+std::unique_lock // 高级可控锁,可以手动加锁/解锁、延迟加锁、尝试加锁、转移所有权。
+std::recursive_mutex // 递归锁：允许同一个线程多次加锁，必须匹配同样次数的解锁。
 std::timed_mutex
 ```
 ```cpp
